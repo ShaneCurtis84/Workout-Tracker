@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout-tracker
 });
 
 // routes
-app.use("/api", require("./routes/apiRoutes.js"));
+app.use(require("./routes/apiRoutes.js"));
 app.use(require("./routes/htmlRoutes.js"));
 
 
